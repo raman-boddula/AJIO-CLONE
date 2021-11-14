@@ -138,7 +138,8 @@
     let count=0;
     ran.textContent=Math.floor(Math.random(10)*1000);
     function getHome(){
-        window.location.href="homepage.html"
+        localStorage.removeItem("Cart_AJIO");
+        window.location.href="index.html";
     }
     let data = JSON.parse(localStorage.getItem('Cart_AJIO'));
     let parent = document.getElementById('prod')
